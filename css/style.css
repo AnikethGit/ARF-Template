@@ -175,8 +175,8 @@ body{
 .home-part .title{
     position: absolute;
     top: 50%;
-    left: 250px;
-    width:70%;
+    left: 0px;
+    width: 100%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
