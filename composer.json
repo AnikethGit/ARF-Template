@@ -1,16 +1,16 @@
 {
-    "name": "priyansh/itcompany",
-    "autoload": {
-        "psr-4": {
-            "Priyansh\\Itcompany\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "It Company"
-        }
-    ],
-    "require": {
-        "phpmailer/phpmailer": "^6.5"
+  "name": "aniketh/arf",
+  "autoload": {
+    "psr-4": {
+      "Aniketh\\ARF\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "ARF Design"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^6.5"
+  }
 }

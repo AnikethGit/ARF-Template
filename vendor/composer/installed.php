@@ -6,7 +6,7 @@
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'reference' => NULL,
-        'name' => 'uddhav/itcompany',
+        'name' => 'aniketh/arf',
         'dev' => true,
     ),
     'versions' => array(
@@ -19,7 +19,7 @@
             'reference' => 'a5b5c43e50b7fba655f793ad27303cd74c57363c',
             'dev_requirement' => false,
         ),
-        'uddhav/itcompany' => array(
+        'aniketh/arf' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'type' => 'library',

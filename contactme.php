@@ -1,5 +1,6 @@
 <?php   
     require("./mailing/mailfunction.php");
+    $recipient_email = "anikethsahu580@gmail.com";
 
     $name = $_POST["name"];
     $phone = $_POST['phone'];
@@ -8,7 +9,7 @@
 
     $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
-    $status = mailfunction("", "Company", $body); //reciever
+    $status = mailfunction("$recipient_email", "ARF Design", $body); //reciever
     if($status)
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
     else
