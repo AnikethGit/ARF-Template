@@ -1,17 +1,17 @@
 <?php   
-    require("./mailing/mailfunction.php");
-    $recipient_email = "anikethsahu580@gmail.com";
+  require("./mailing/mailfunction.php");
+  $recipient_email = "anikethsahu580@gmail.com";
 
-    $name = $_POST["name"];
-    $phone = $_POST['phone'];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+  $name = $_POST["name"];
+  $phone = $_POST['phone'];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
 
-    $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
+  $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
-    $status = mailfunction("$recipient_email", "ARF Design", $body); //reciever
-    if($status)
-        echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
-    else
-        echo '<center><h1>Error sending message! Please try again.</h1></center>';    
+  $status = mailfunction("$recipient_email", "ARF Design", $body); //reciever
+  if($status)
+    echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
+  else
+    echo '<center><h1>Error sending message! Please try again.</h1></center>';    
 ?>

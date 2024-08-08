@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-*{
+
+* {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
@@ -10,15 +11,15 @@
   text-decoration: none;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,43 +32,43 @@ body{
   position: fixed;
 }
 
-.header .logo img{
+.header .logo img {
   width: 100%;
   height: 5rem;
   top: 0;
   left: 0;
 }
 
-.header .logo img:hover{
-	transform: scale(1.1);
+.header .logo img:hover {
+  transform: scale(1.1);
 }
 
-.header .navbar ul{
+.header .navbar ul {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.header .navbar ul li{
+.header .navbar ul li {
   margin: 0 1.5rem;
 }
 
-.header .navbar ul li a{
+.header .navbar ul li a {
   font-size: 2rem;
   color: #fff;
 }
 
-.header .navbar ul li a:hover{
+.header .navbar ul li a:hover {
   color: #00bfff;
   text-decoration: underline;
 }
 
-.header .logo i{
+.header .logo i {
   padding: 0.5rem;
 }
 
-.header .fa-bars{
+.header .fa-bars {
   color: #fff;
   cursor: pointer;
   font-size: 3rem;
@@ -82,8 +83,10 @@ body{
   color: rgb(255, 255, 255);
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Dropdown content (hidden by default) */
@@ -92,7 +95,7 @@ body{
   position: absolute;
   background-color: #000000;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   opacity: 0.8;
 }
@@ -117,7 +120,7 @@ body{
   display: block;
 }
 
-.home{
+.home {
   min-height: 35vh;
   width: 100vw;
   background-image: url(../images/img3.jpg);
@@ -132,17 +135,17 @@ body{
   overflow: hidden !important;
 }
 
-.home h2{
+.home h2 {
   color: #fff;
   font-size: 5.5rem;
   font-family: fantasy;
 }
 
-.career-heading{
+.career-heading {
   text-align: center;
 }
 
-.heading{
+.heading {
   padding-top: 6rem;
   display: inline-block;
   font-size: 3.5rem;
@@ -158,17 +161,19 @@ body{
   0% {
     margin-left: -500px;
   }
+
   100% {
     margin-left: 0%;
   }
 }
 
-.career-heading p{
+.career-heading p {
   font-size: 2rem;
   color: #333;
 }
 
-.heading::before, .heading::after{
+.heading::before,
+.heading::after {
   content: '';
   position: absolute;
   height: 2.5rem;
@@ -177,18 +182,18 @@ body{
   border-left: .4rem solid #002e5f;
 }
 
-.heading::before{
+.heading::before {
   top: 5.8rem;
   left: -2rem;
 }
 
-.heading::after{
+.heading::after {
   bottom: -.5rem;
   right: -2rem;
   transform: rotate(180deg);
 }
 
-.vacancy{
+.vacancy {
   padding-top: 6rem;
   display: inline-block;
   font-size: 2.5rem;
@@ -204,12 +209,14 @@ body{
   0% {
     margin-left: 500px;
   }
+
   100% {
     margin-left: 21rem;
   }
 }
 
-.vacancy::before, .vacancy::after{
+.vacancy::before,
+.vacancy::after {
   content: '';
   position: absolute;
   height: 2.5rem;
@@ -218,18 +225,18 @@ body{
   border-left: .3rem solid #002e5f;
 }
 
-.vacancy::before{
+.vacancy::before {
   top: 5.8rem;
   left: -2rem;
 }
 
-.vacancy::after{
+.vacancy::after {
   bottom: -.5rem;
   right: -2rem;
   transform: rotate(180deg);
 }
 
-.career-jb{
+.career-jb {
   width: 70%;
   height: auto;
   margin: 5rem auto 5rem auto;
@@ -237,17 +244,17 @@ body{
   flex-wrap: wrap;
   padding: 30px;
   border-radius: 10px;
-  background:rgb(245, 255, 255);
+  background: rgb(245, 255, 255);
   box-shadow: 0px 0px 10px 0px #666;
 }
 
-.post{
+.post {
   font-size: 2rem;
   font-family: sans-serif;
   margin-left: 0rem;
 }
 
-.resume{
+.resume {
   padding-top: 6rem;
   display: inline-block;
   font-size: 2.5rem;
@@ -259,7 +266,8 @@ body{
   animation-name: slidein1;
 }
 
-.resume::before, .resume::after{
+.resume::before,
+.resume::after {
   content: '';
   position: absolute;
   height: 2.5rem;
@@ -268,18 +276,18 @@ body{
   border-left: .3rem solid #002e5f;
 }
 
-.resume::before{
+.resume::before {
   top: 5.8rem;
   left: -2rem;
 }
 
-.resume::after{
+.resume::after {
   bottom: -.5rem;
   right: -2rem;
   transform: rotate(180deg);
 }
 
-.career{
+.career {
   width: 70%;
   height: auto;
   margin: 5rem auto 5rem auto;
@@ -287,11 +295,11 @@ body{
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 10px;
-  background:rgb(245, 255, 255);
+  background: rgb(245, 255, 255);
   box-shadow: 0px 0px 10px 0px #666;
 }
 
-.career-form{
+.career-form {
   margin-top: .5rem;
   width: 100%;
   height: auto;
@@ -299,7 +307,8 @@ body{
   text-align: left;
 }
 
-.career-form-txt, .career-form-experience{
+.career-form-txt,
+.career-form-experience {
   margin-left: 2rem;
   width: 96.5%;
   height: 40px;
@@ -312,7 +321,7 @@ body{
   font-size: 1.5rem;
 }
 
-.career-form-email{
+.career-form-email {
   margin-left: 2rem;
   width: 96.5%;
   height: 40px;
@@ -325,17 +334,18 @@ body{
   font-size: 1.5rem;
 }
 
-.career-form-txt::placeholder, .career-form-experience::placeholder{
+.career-form-txt::placeholder,
+.career-form-experience::placeholder {
   color: #aaa;
   font-size: 1.5rem;
 }
 
-.career-form-email::placeholder{
+.career-form-email::placeholder {
   color: #aaa;
   font-size: 1.5rem;
 }
 
-.radio-class{
+.radio-class {
   margin-left: 1rem;
   width: 110%;
   margin-top: -2rem;
@@ -345,13 +355,13 @@ body{
   padding: 15px;
 }
 
-.radio{
+.radio {
   margin-top: .75rem;
   font-size: 1.5rem;
   margin-right: 9.5rem;
 }
 
-.career-form-txtarea{
+.career-form-txtarea {
   margin-left: 2rem;
   width: 96.5%;
   height: 130px;
@@ -365,12 +375,12 @@ body{
   font-size: 1.5rem;
 }
 
-.career-form-txtarea::placeholder{
+.career-form-txtarea::placeholder {
   color: #aaa;
   font-size: 1.5rem;
 }
 
-.file{
+.file {
   margin-left: 1rem;
   width: 100%;
   margin-top: -2.5rem;
@@ -380,13 +390,13 @@ body{
   padding: 15px;
 }
 
-.upload{
+.upload {
   margin-top: .75rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.career-form-btn{
+.career-form-btn {
   margin-left: 2rem;
   outline: none;
   border: none;
@@ -400,17 +410,17 @@ body{
   margin-top: 1rem;
   margin-bottom: .5rem;
   width: 15rem;
-  box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
 }
 
-.career-form-btn:hover{
+.career-form-btn:hover {
   letter-spacing: .1rem;
   opacity: .9;
   color: white;
   background: #002e5f;
 }
 
-.career-form-phone{
+.career-form-phone {
   margin-left: 2rem;
   width: 96.5%;
   height: 40px;
@@ -423,18 +433,18 @@ body{
   font-size: 1.5rem;
 }
 
-.career-form-phone::placeholder{
+.career-form-phone::placeholder {
   color: #aaa;
   font-size: 1.5rem;
 }
 
-.footer{
+.footer {
   position: relative;
   padding: 0 0 30px 0;
   background: #333;
 }
 
-.footer .footer-top{
+.footer .footer-top {
   background: #002e5f;
   padding: 60px 0 30px 0;
 }
@@ -562,17 +572,18 @@ body{
 .back-to-top {
   position: fixed;
   display: none;
-  background-color: #00bfff;
+  background-color: #025add;
   color: #ffffff;
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
   text-align: center;
   line-height: 1;
   font-size: 44px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.3s;
-  z-index: 9;
+  transition: all;
+  z-index: 99999;
+  border-radius: 50px;
 }
 
 .back-to-top i {
@@ -587,18 +598,18 @@ body{
   .footer .credit {
     text-align: right;
   }
-  
+
   .footer .copyright {
     text-align: left;
   }
 }
 
-@media (max-width: 1000px){
-  html{
+@media (max-width: 1000px) {
+  html {
     font-size: 50%;
   }
 
-  .header .logo img{
+  .header .logo img {
     width: 70%;
     height: 5rem;
     top: 0;
@@ -606,16 +617,16 @@ body{
     background-size: cover;
   }
 
-  .header .fa-bars{
+  .header .fa-bars {
     display: block;
-    color: 	white;
+    color: white;
   }
 
-  .header .fa-bars:hover{
+  .header .fa-bars:hover {
     color: #00bfff;
   }
 
-  .header .navbar{
+  .header .navbar {
     position: fixed;
     top: -120%;
     left: 0;
@@ -623,37 +634,37 @@ body{
     width: 100%;
     background-color: white;
     z-index: 1000;
-    border-top: .1rem solid rgba(0,0,0,.3);
+    border-top: .1rem solid rgba(0, 0, 0, .3);
   }
 
-  .header .navbar ul{
+  .header .navbar ul {
     height: 100%;
     width: 100%;
     flex-flow: column;
   }
 
-  .header .navbar ul li{
+  .header .navbar ul li {
     margin: 1rem 0;
   }
 
-  .header .navbar ul li a{
+  .header .navbar ul li a {
     color: grey;
     font-size: 2.4rem;
   }
 
-  .header .fa-times{
+  .header .fa-times {
     transform: rotate(90deg);
   }
 
-  .header .nav-toggle{
+  .header .nav-toggle {
     top: 5.8rem;
   }
 
-  .home{
+  .home {
     min-height: 30vh;
   }
 
-  .home h2{
+  .home h2 {
     color: #fff;
     font-size: 4rem;
   }
@@ -663,22 +674,24 @@ body{
     height: 30px;
     font-size: 30px;
   }
-  .dropdown .dropbtn{
+
+  .dropdown .dropbtn {
     color: grey;
     font-size: 2.4rem;
     margin: -1.5rem 0 -1.5rem 0;
   }
-  .career-vacancy{
+
+  .career-vacancy {
     text-align: center;
   }
-  .career-resume{
+
+  .career-resume {
     text-align: center;
   }
 }
 
-@media (max-width: 1500px){
-  .career
-  {
+@media (max-width: 1500px) {
+  .career {
     width: 80%;
     height: auto;
     margin: 5rem auto 5rem auto;
@@ -689,16 +702,17 @@ body{
     background: #fff;
     box-shadow: 0px 0px 10px 0px #666;
   }
-  .career-form
-  {
+
+  .career-form {
     margin-top: .5rem;
     width: 100%;
     height: auto;
     flex: 50%;
     text-align: left;
   }
-  .career-form-txt, .career-form-experience
-  {
+
+  .career-form-txt,
+  .career-form-experience {
     margin-left: 1rem;
     width: 96.5%;
     height: 40px;
@@ -710,8 +724,8 @@ body{
     padding: 15px;
     font-size: 1.5rem;
   }
-  .career-form-email
-  {
+
+  .career-form-email {
     margin-left: 1rem;
     width: 96.5%;
     height: 40px;
@@ -723,18 +737,19 @@ body{
     padding: 15px;
     font-size: 1.5rem;
   }
-  .career-form-txt::placeholder, .career-form-experience::placeholder
-  {
+
+  .career-form-txt::placeholder,
+  .career-form-experience::placeholder {
     color: #aaa;
     font-size: 1.5rem;
   }
-  .career-form-email::placeholder
-  {
+
+  .career-form-email::placeholder {
     color: #aaa;
     font-size: 1.5rem;
   }
-  .radio-class
-  {
+
+  .radio-class {
     margin-left: 0;
     width: 110%;
     margin-top: -2.5rem;
@@ -743,13 +758,13 @@ body{
     margin-bottom: auto;
     padding: 15px;
   }
-  .radio
-  {
+
+  .radio {
     font-size: 1.5rem;
     margin-right: 5rem;
   }
-  .career-form-txtarea
-  {
+
+  .career-form-txtarea {
     margin-left: 1rem;
     width: 96.5%;
     height: 130px;
@@ -762,13 +777,13 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
   }
-  .career-form-txtarea::placeholder
-  {
+
+  .career-form-txtarea::placeholder {
     color: #aaa;
     font-size: 1.5rem;
   }
-  .file   
-  {
+
+  .file {
     margin-left: 0;
     width: 100%;
     margin-top: -2.5rem;
@@ -777,14 +792,14 @@ body{
     margin-bottom: 5rem;
     padding: 15px;
   }
-  .upload
-  {
+
+  .upload {
     margin-top: .75rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  .career-form-btn
-  {
+
+  .career-form-btn {
     margin-left: 1rem;
     outline: none;
     border: none;
@@ -798,16 +813,17 @@ body{
     margin-top: 1rem;
     margin-bottom: .5rem;
     width: 15rem;
-    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
   }
-  .career-form-btn:hover{
+
+  .career-form-btn:hover {
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
     background: #002e5f;
   }
-  .career-form-phone
-  {
+
+  .career-form-phone {
     margin-left: 1rem;
     width: 96.5%;
     height: 40px;
@@ -819,8 +835,8 @@ body{
     padding: 15px;
     font-size: 1.5rem;
   }
-  .career-form-phone::placeholder
-  {
+
+  .career-form-phone::placeholder {
     color: #aaa;
     font-size: 1.5rem;
   }
