@@ -6,39 +6,39 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitb299d17303e629ef36c433e6d8390978
 {
-  public static $prefixLengthsPsr4 = array (
-    'U' => 
-    array (
-      'Aniketh\\ARF\\' => 17,
-    ),
-    'P' => 
-    array (
-      'PHPMailer\\PHPMailer\\' => 20,
-    ),
-  );
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'A' => 
+        array (
+            'Aniketh\\ARF\\' => 12,
+        ),
+    );
 
-  public static $prefixDirsPsr4 = array (
-    'Aniketh\\ARF\\' => 
-    array (
-      0 => __DIR__ . '/../..' . '/src',
-    ),
-    'PHPMailer\\PHPMailer\\' => 
-    array (
-      0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
-    ),
-  );
+    public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'Aniketh\\ARF\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
 
-  public static $classMap = array (
-    'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-  );
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
 
-  public static function getInitializer(ClassLoader $loader)
-  {
-    return \Closure::bind(function () use ($loader) {
-      $loader->prefixLengthsPsr4 = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$prefixLengthsPsr4;
-      $loader->prefixDirsPsr4 = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$prefixDirsPsr4;
-      $loader->classMap = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$classMap;
+    public static function getInitializer(ClassLoader $loader)
+    {
+        return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb299d17303e629ef36c433e6d8390978::$classMap;
 
-    }, null, ClassLoader::class);
-  }
+        }, null, ClassLoader::class);
+    }
 }
