@@ -30,56 +30,92 @@
     <nav class="navbar">
       <ul>
         <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">About
+              <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="index.html#team">Our Team</a>
+              <a href="index.html#clients">Our Clients</a>
+            </div>
+          </div>
+        </li>
         <li><a href="services.html">services</a></li>
-        <!--<li><a href="#portfolio">products</a></li>-->
-        <li><a href="index.html#team">team profile</a></li>
+        <!--<li><a href="#portfolio">portfolio</a></li>-->
         <li><a href="careers.html">career</a></li>
         <li><a href="contact.html">contact</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <!--<li><button onclick="mybFunction()">Dark Mode</button></li>-->
       </ul>
     </nav>
   </header>
 
   <section id="home" class="home">
-    <h2>Home / About</h2>
+    <h2>Home / FAQ</h2>
   </section>
 
-  <section id="about-heading" class="about-heading">
-    <h1 class="heading">About Us</h1>
-    <p>Founded in 2008 , ARF Design is an IC layout services company. We provide full custom layout design services to
-      the global semiconductor industry. Our services include analog, RF/mm Wave, mixed-signal , IOs ESDs, Memory and
-      digital layout designs.</p>
-    <p>
-      ARF Design Pvt Ltd, is an IC layout design services organization with mission to provide quality layout design
-      services to Semiconductor companies in India and abroad. We have a team of young and talented leaders and
-      employees, recognised as experts in the industry.
-    </p>
+  <section id="faq" class="faq">
+    <h1 class="heading">Frequently asked questions</h1>
   </section>
 
-  <section id="our-mission" class="our-mission">
-    <h4 class="mission-heading">Our Mission And Values</h4>
-    <p>With the focus being on IC layout design, our aim is to be the best in the segments of the services that ARF
-      Design provides. Offer on-site/off-site design services. Provide services that are superior in quality and within
-      schedule at a very competitive pricing. Create a pool of talented and trained engineers with a culture focused at
-      customer satisfaction.</p>
-  </section>
-  <div class="row">
-    <div class="col-sm-5 col-lg-5 col-lg-offset-1">
-      <ul class="marker-list-sm animation" data-animation="fadeInLeft" data-animation-delay="0s">
-        <li>100% Client Satisfication</li>
-        <li>Nurturing Leaders</li>
-        <li>Large Technical Knowledge Base</li>
-
-
-      </ul>
+  <div class="accordion-container">
+    <div class="accordion">
+      <div class="accordion-header">
+        <h3>How much will it cost?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a
+          few questions about the nature of the design, what sort of interactivity the product will have, your
+          circuit design needs, etc.
+          Then we’ll be able to give you a ballpark figure.
+          If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
+      </div>
     </div>
-    <div class="col-sm-5 col-lg-5 col-lg-offset-1">
-      <ul class="marker-list-sm animation" data-animation="fadeInRight" data-animation-delay="0s">
-        <li>World Class Engineering Team</li>
-        <li>Project Managment Expertise</li>
-        <li>Offices in India & USA</li>
-      </ul>
+    <div class="accordion">
+      <div class="accordion-header">
+        <h3>How long it takes to design?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>The time limit of any assignment is normally dictated by the client. If you have any time limit in mind
+          we will attempt to assemble it for you.
+          The main general delay in the making of a design is waiting for the requirements to be sent to us by the
+          client.</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <h3>How do I associate with ARF Design?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>The process begins when you contact us with your requirements. We analyze your requirements and respond
+          to you.
+          On the basis of the further discussion, you can choose an engagement model that suits you the best.
+          After that, we begin the process of development.</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <h3>Can you help my current design work more proficiently?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Yes. Give us your requirements and we have experienced expertise to help you give a
+          new proficient look that really wonders!</p>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <h3>When do I pay?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can
+          work with you to set up a schedule that meets your needs.
+          We understand that this is a big investment and want to help you budget for the expense in whatever way
+          possible.
+          We accept checks, PayPal, and all major credit cards.</p>
+      </div>
     </div>
   </div>
 
